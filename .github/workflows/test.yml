@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - '*'
+jobs:
+  Setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.16'
+  Test:
+    runs-on: ubuntu-latest
+    needs: Setup
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: cd code_coverage && npm install
+      - name: Run tests
+        run: cd code_coverage && npm run coverage
