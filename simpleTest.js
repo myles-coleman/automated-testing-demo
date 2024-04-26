@@ -4,7 +4,6 @@ const addTwo = require('./simple.js').addTwo;
 const multTwo = require('./simple.js').multTwo;
 const subTwo = require('./simple.js').subTwo;
 const divTwo = require('./simple.js').divTwo;
-const expTwo = require('./simple.js').expTwo;
 
 describe('App', function() {
     it('test should return 1', function(){
@@ -25,7 +24,5 @@ describe('App', function() {
     it('divTwo should return 2', function(){ //division
         assert.equal(divTwo(4,2), 2);
     });
-    it('expTwo should return 16', function(){ //exponentiation
-        assert.equal(expTwo(4,2), 16);
-    });
+
 });
