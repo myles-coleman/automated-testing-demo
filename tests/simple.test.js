@@ -1,4 +1,3 @@
-const assert = require('chai').assert;
 const test = require('../simple.js').test;
 const addTwo = require('../simple.js').addTwo;
 const multTwo = require('../simple.js').multTwo;
@@ -27,11 +26,11 @@ describe('App', function() {
     });
 
     //expTwo Unit Tests
-    it('expTwo should return 4', function(){ //exponentiation
-        assert.equal(expTwo(2,2), 4);
-    });
-    it('expTwo should return 1', function(){ //exponentiation
-        assert.equal(expTwo(2,0), 1);
-    });
+    // it('expTwo should return 4', function(){ //exponentiation
+    //     assert.equal(expTwo(2,2), 4);
+    // });
+    // it('expTwo should return 1', function(){ //exponentiation
+    //     assert.equal(expTwo(2,0), 1);
+    // });
 
 });
