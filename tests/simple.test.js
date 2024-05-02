@@ -21,10 +21,10 @@ describe('App', function() {
     });
 
     // expTwo Unit Tests
-    // it('expTwo should return 4', function() { // Exponentiation
-    //     expect(expTwo(2, 2)).toBe(4);
-    // });
-    // it('expTwo should return 1', function() { // Exponentiation with power of 0
-    //     expect(expTwo(2, 0)).toBe(1);
-    // });
+    it('expTwo should return 4', function() { // Exponentiation
+        expect(expTwo(2, 2)).toBe(4);
+    });
+    it('expTwo should return 1', function() { // Exponentiation with power of 0
+        expect(expTwo(2, 0)).toBe(1);
+    });
 });
